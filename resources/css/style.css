@@ -13,19 +13,11 @@ body {
 }
 
 #sidebar-wrapper {
-  background: #0f2027; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to top,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to top,
-    #2c5364,
-    #203a43,
-    #0f2027
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: linear-gradient(rgba(44, 83, 100, 0.9), rgba(44, 83, 100, 0.9)),
+      url(https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
   border-top-right-radius: 5px;
   min-height: 100vh;
   margin-left: -15rem;
@@ -34,18 +26,25 @@ body {
   -o-transition: margin 0.25s ease-out;
   transition: margin 0.25s ease-out;
 }
-
-#sidebar-wrapper .sidebar-heading {
-  padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
-}
+/*#sidebar-header {
+  background-image: linear-gradient(rgba(44, 83, 100, 0.9), rgba(44, 83, 100, 0.9)),
+      url(https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}*/
 
 #sidebar-wrapper .list-group {
   width: 15rem;
 }
 
+#sidebar-wrapper .list-group a {
+  border: 1px solid rgba(44, 83, 100, 1);
+  transition: 3s;
+}
+
 #sidebar-wrapper .list-group a:hover {
-    background-color: #2c5364 !important;
+    background-color: #576574 !important;
 }
 
 #page-content-wrapper {
