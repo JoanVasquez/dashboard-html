@@ -4,7 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:500" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:500"
+      rel="stylesheet"
+    />
 
     <link
       rel="stylesheet"
@@ -21,15 +24,18 @@
       <!-- Sidebar -->
       <div id="sidebar-wrapper">
         <div class="list-group list-group-flush sticky-top">
-          <li class="list-group-item bg-transparent text-light text-center pb-5" id="sidebar-header">
-              <i class="fas fa-wrench fa-5x mb-4 mt-2"></i>
+          <li
+            class="list-group-item bg-transparent text-light text-center pb-5"
+            id="sidebar-header"
+          >
+            <i class="fas fa-wrench fa-5x mb-4 mt-2"></i>
             <div>
-                <h3><strong>DASHBOARD</strong></h3>
+              <h3><strong>DASHBOARD</strong></h3>
             </div>
           </li>
           <a
             href="#"
-            class="text-white list-group-item bg-transparent pt-3 pb-3"
+            class="text-white list-group-item bg-transparent pt-3 pb-3 sidebar-active"
           >
             <i class="fas fa-chart-pie mr-3"></i> Charts
           </a>
@@ -59,8 +65,11 @@
       <!-- /#sidebar-wrapper -->
 
       <!-- Page Content -->
-      <div id="#page-content-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" id="navbar">
+      <div id="page-content-wrapper">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-white sticky-top"
+          id="navbar"
+        >
           <!--<button class="btn btn-primary" id="menu-toggle">Toggle Menu</button>-->
           <a href="javascript:void(0)" class="text-dark" id="menu-toggle">
             <i class="fas fa-sliders-h text"></i>
@@ -80,15 +89,23 @@
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-              <li class="nav-item active">
-                <a class="nav-link" href="#"
-                  >Home <span class="sr-only">(current)</span></a
-                >
+              <li class="nav-item mr-5">
+                <a class="nav-link notif" href="#">
+                  <i class="fas fa-bell fa-lg"></i>
+                  <span class="badge text">3</span>
+                </a>
               </li>
-              <li class="nav-item">
+
+              <li class="nav-item mr-5">
+                <a class="nav-link notif" href="#">
+                  <i class="fas fa-envelope"></i>
+                  <span class="badge text">5</span>
+                </a>
+              </li>
+              <!--<li class="nav-item mr-3">
                 <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
+              </li>-->
+              <li class="nav-item mr-3 dropdown">
                 <a
                   class="nav-link dropdown-toggle"
                   href="#"
@@ -98,7 +115,11 @@
                   aria-haspopup="true"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  <img
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    class="rounded-circle"
+                    alt=""
+                  />
                 </a>
                 <div
                   class="dropdown-menu dropdown-menu-right"
@@ -114,35 +135,91 @@
           </div>
         </nav>
         <div class="container-fluid">
-          <h1 class="mt-4">Simple Sidebar</h1>
-          <div class="row">
-            <div class="col-12">
-              <p>
-                The starting state of the menu will appear collapsed on smaller
-                screens, and will appear non-collapsed on larger screens. When
-                toggled using the button below, the menu will change.
-              </p>
-              <p>
-                Make sure to keep all page content within the
-                <code>#page-content-wrapper</code>. The top navbar is optional,
-                and just for demonstration. Just create an element with the
-                <code>#menu-toggle</code> ID which will toggle the menu when
-                clicked.
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, alias maiores. Iure in animi pariatur error? Tempore repellat tempora placeat assumenda non natus cupiditate ipsum, quasi quas, quidem excepturi deserunt!
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui cum, assumenda, vitae, neque vero voluptatibus deleniti accusantium dolores obcaecati vel quidem itaque et ea rerum ipsum. Praesentium sit harum alias.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, fugit, eum incidunt eaque quam, expedita aliquid possimus quis ipsam cumque minima non doloribus porro! Tenetur deleniti non libero cum illo.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat facilis obcaecati rem cupiditate! Quaerat, eveniet esse provident consequuntur nisi, inventore nostrum nemo nobis ut magnam atque quis rerum molestias praesentium.
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed debitis ad facilis repudiandae dolorum a et veniam quaerat aperiam totam corrupti, voluptates aspernatur dicta, doloremque, nihil eveniet nostrum consectetur odit?
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non consequuntur cupiditate esse optio expedita ab, voluptatibus, eius aut commodi, ex deserunt numquam odit! Nostrum, distinctio accusantium ipsa aspernatur dolore quis?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio eligendi quisquam et hic dolorum eaque est. Soluta cumque vitae fuga quod quibusdam voluptatibus placeat incidunt quidem dolorem! Exercitationem, nam.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dolore, fugit modi totam enim, alias itaque, nam est aperiam eaque vero at eveniet? Id ad suscipit libero quae provident reiciendis.
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum, alias ex, corrupti omnis similique aut commodi nihil tenetur vel corporis distinctio molestias temporibus eligendi ratione. Reiciendis ratione nesciunt quia et!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eos voluptatum magnam illum necessitatibus minima. Vitae dolore, enim, dicta laudantium nihil non debitis quo est iste, excepturi omnis nulla atque at.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, earum! Nulla accusantium dolorem excepturi maxime ducimus quibusdam reiciendis aspernatur quaerat tempora. Quaerat fuga unde ullam omnis quidem, quibusdam eligendi tempore.
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus enim harum, ea rerum architecto aspernatur omnis porro magnam laboriosam esse assumenda eum facilis quae deleniti vero dolorum nam temporibus voluptates.
-              </p>
+          <div class="row p-4">
+            <div class="col-sm-12 col-lg-3">
+              <div class="col-12 m-3 bg-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat in fuga animi sequi tempora quisquam iure ipsam at ducimus. Provident commodi voluptatibus et nemo accusamus dolore tenetur eos deleniti.
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+              <div class="col-12 m-3 bg-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat in fuga animi sequi tempora quisquam iure ipsam at ducimus. Provident commodi voluptatibus et nemo accusamus dolore tenetur eos deleniti.
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+              <div class="col-12 m-3 bg-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat in fuga animi sequi tempora quisquam iure ipsam at ducimus. Provident commodi voluptatibus et nemo accusamus dolore tenetur eos deleniti.
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-3">
+              <div class="col-12 m-3 bg-white">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis quaerat in fuga animi sequi tempora quisquam iure ipsam at ducimus. Provident commodi voluptatibus et nemo accusamus dolore tenetur eos deleniti.
+              </div>
+            </div>
+          </div>
+          <div class="row bg-white p-4">
+            <div class="col-sm-12 col-lg-6 mt-4">
+              <canvas id="linear-chart" class="col-12 m-3"></canvas>
+            </div>
+            <div class="col-sm-12 col-lg-6 mt-4">
+                <h3 class="text-center">Goals Completed</h3>
+                <div class="col-12 mt-4">
+                  <span>Develop a React JS app</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar-one"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="100"
+                    >
+                      100%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <span>Study React Native</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar-two"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="20"
+                    >
+                      20%
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 mt-4">
+                  <span>Deploy my Java App</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar-three"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="80"
+                    >
+                      80%
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 mt-4">
+                  <span>Install and configure Linux</span>
+                  <div class="progress">
+                    <div
+                      class="progress-bar-four"
+                      role="progressbar"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                      aria-valuenow="90"
+                    >
+                      90%
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
         </div>
@@ -152,6 +229,7 @@
     <!-- /#wrapper -->
 
     <script src="vendors/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
     <script src="vendors/js/bootstrap.min.js"></script>
     <script src="resources/js/app.js"></script>
   </body>

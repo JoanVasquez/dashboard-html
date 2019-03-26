@@ -4,12 +4,41 @@
   box-sizing: border-box;
 }
 
-body {
+html, body {
   overflow-x: hidden;
+  font-size: 1rem;
+  background-color: #fafafa;
 }
 
 #navbar {
     box-shadow: 2px 0px 5px #bbbbbb !important;
+}
+
+#navbar li {
+  display: inline-block !important;
+  vertical-align: middle !important;
+
+}
+
+#navbar img {
+  width: 30px;
+  height: 30px;
+  margin-top: -6px;
+}
+
+#navbar .notif {
+  position: relative;
+}
+
+#navbar .badge {
+  position: absolute;
+  top: 0px;
+  left: 22px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ee5752;
+  color: white;
 }
 
 #sidebar-wrapper {
@@ -21,18 +50,19 @@ body {
   border-top-right-radius: 5px;
   min-height: 100vh;
   margin-left: -15rem;
-  -webkit-transition: margin 0.25s ease-out;
-  -moz-transition: margin 0.25s ease-out;
-  -o-transition: margin 0.25s ease-out;
-  transition: margin 0.25s ease-out;
+  -webkit-transition: margin 0.50s ease-out;
+  -moz-transition: margin 0.50s ease-out;
+  -o-transition: margin 0.50s ease-out;
+  transition: margin 0.50s ease-out;
 }
-/*#sidebar-header {
-  background-image: linear-gradient(rgba(44, 83, 100, 0.9), rgba(44, 83, 100, 0.9)),
-      url(https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}*/
+
+#sidebar-wrapper .sidebar-active {
+  border-left: 2px solid #fff !important;
+}
+
+#sidebar-wrapper .sidebar-active {
+  background-color: #576574 !important;
+}
 
 #sidebar-wrapper .list-group {
   width: 15rem;
@@ -40,7 +70,7 @@ body {
 
 #sidebar-wrapper .list-group a {
   border: 1px solid rgba(44, 83, 100, 1);
-  transition: 3s;
+  transition: background-color 2s ease;
 }
 
 #sidebar-wrapper .list-group a:hover {
@@ -48,21 +78,45 @@ body {
 }
 
 #page-content-wrapper {
-  min-width: 100vw;
+  width: 100% !important;
 }
 
 #wrapper.toggled #sidebar-wrapper {
   margin-left: 0;
 }
 
+/*PROGRESS BAR*/
+.progress .progress-bar-one {
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(235, 77, 75, 0.7);
+}
+
+.progress .progress-bar-two {
+  width: 20%;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(106, 176, 76, 0.7);
+}
+
+.progress .progress-bar-three {
+  width: 80%;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(104, 109, 224, 1.0)
+}
+
+.progress .progress-bar-four {
+  width: 90%;
+  color: #fff;
+  text-align: center;
+  background-color: rgba(48, 51, 107,1.0);
+}
+
 @media (min-width: 768px) {
   #sidebar-wrapper {
     margin-left: 0;
-  }
-
-  #page-content-wrapper {
-    min-width: 0;
-    width: 100%;
   }
 
   #wrapper.toggled #sidebar-wrapper {
