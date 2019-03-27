@@ -4,20 +4,20 @@
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   overflow-x: hidden;
   font-size: 1rem;
   background-color: #fafafa;
 }
 
 #navbar {
-    box-shadow: 2px 0px 5px #bbbbbb !important;
+  box-shadow: 2px 0px 5px #bbbbbb !important;
 }
 
 #navbar li {
   display: inline-block !important;
   vertical-align: middle !important;
-
 }
 
 #navbar img {
@@ -42,18 +42,21 @@ html, body {
 }
 
 #sidebar-wrapper {
-  background-image: linear-gradient(rgba(44, 83, 100, 0.9), rgba(44, 83, 100, 0.9)),
-      url(https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: linear-gradient(
+      rgba(44, 83, 100, 0.9),
+      rgba(44, 83, 100, 0.9)
+    ),
+    url(https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
   border-top-right-radius: 5px;
   min-height: 100vh;
   margin-left: -15rem;
-  -webkit-transition: margin 0.50s ease-out;
-  -moz-transition: margin 0.50s ease-out;
-  -o-transition: margin 0.50s ease-out;
-  transition: margin 0.50s ease-out;
+  -webkit-transition: margin 0.5s ease-out;
+  -moz-transition: margin 0.5s ease-out;
+  -o-transition: margin 0.5s ease-out;
+  transition: margin 0.5s ease-out;
 }
 
 #sidebar-wrapper .sidebar-active {
@@ -74,7 +77,7 @@ html, body {
 }
 
 #sidebar-wrapper .list-group a:hover {
-    background-color: #576574 !important;
+  background-color: #576574 !important;
 }
 
 #page-content-wrapper {
@@ -104,14 +107,14 @@ html, body {
   width: 80%;
   color: #fff;
   text-align: center;
-  background-color: rgba(104, 109, 224, 1.0)
+  background-color: rgba(104, 109, 224, 1);
 }
 
 .progress .progress-bar-four {
   width: 90%;
   color: #fff;
   text-align: center;
-  background-color: rgba(48, 51, 107,1.0);
+  background-color: rgba(48, 51, 107, 1);
 }
 
 @media (min-width: 768px) {

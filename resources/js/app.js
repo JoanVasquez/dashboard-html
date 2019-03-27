@@ -37,7 +37,7 @@
       }
     });
 
-    let pieChart = document.getElementById('pie-chart').getContext('2d');
+   /* let pieChart = document.getElementById('pie-chart').getContext('2d');
 
     new Chart(pieChart, {
       type: 'polarArea',
@@ -66,7 +66,7 @@
           }
         ]
       }
-    });
+    });*/
 
   });
 })();
