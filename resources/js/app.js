@@ -6,14 +6,17 @@
       $("#wrapper").toggleClass("toggled");
     });
 
-    let linearChart = document.getElementById('linear-chart').getContext('2d');
+    Chart.defaults.global.responsive = true;
+    Chart.defaults.global.maintainAspectRatio = false;
+
+    let linearChart = document.getElementById('pie-chart').getContext('2d');
     new Chart(linearChart, {
       type: 'bar',
       data: {
-        labels: ['Boston', 'Worcester', 'Springfield', 'Lowell', 'Cambriedge', 'New Bedford'],
+        labels: ['JavaScript', 'PHP', '.NET', 'Java', 'R'],
         datasets: [
           {
-            label: 'POPULATION',
+            label: 'POPULARITY',
             data: [
               617594,
               181045,
@@ -26,8 +29,7 @@
               'rgba(235, 77, 75,0.8)',
               'rgba(255, 190, 118,0.8)',
               'rgba(240, 147, 43,0.8)',
-              'rgba(34, 166, 179,0.8)',
-              'rgba(126, 214, 223,0.8)'
+              'rgba(34, 166, 179,0.8)'
             ],
             borderWidth: 2,
             borderColor: '#777'

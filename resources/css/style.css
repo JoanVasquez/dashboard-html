@@ -6,12 +6,19 @@
 
 html,
 body {
-  overflow-x: hidden;
   font-size: 1rem;
   background-color: #fafafa;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #navbar {
+  position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    top: 0;
+    z-index: 9999;
   box-shadow: 2px 0px 5px #bbbbbb !important;
 }
 
@@ -41,6 +48,11 @@ body {
   color: white;
 }
 
+#wrapper {
+  min-height: 100%;
+  flex-direction: row;
+}
+
 #sidebar-wrapper {
   background-image: linear-gradient(
       rgba(44, 83, 100, 0.9),
@@ -48,14 +60,11 @@ body {
     ),
     url(https://pbs.twimg.com/media/DMDIKcyWsAEsKDj.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   background-attachment: fixed;
   border-top-right-radius: 5px;
-  min-height: 100vh;
+  min-height: 100%;
   margin-left: -15rem;
-  -webkit-transition: margin 0.5s ease-out;
-  -moz-transition: margin 0.5s ease-out;
-  -o-transition: margin 0.5s ease-out;
   transition: margin 0.5s ease-out;
 }
 
@@ -68,6 +77,10 @@ body {
 }
 
 #sidebar-wrapper .list-group {
+  position: sticky;
+    position: -webkit-sticky;
+    display: flex;
+    top: 0;
   width: 15rem;
 }
 
@@ -81,7 +94,7 @@ body {
 }
 
 #page-content-wrapper {
-  width: 100% !important;
+  width: 100%;
 }
 
 #wrapper.toggled #sidebar-wrapper {
@@ -115,6 +128,11 @@ body {
   color: #fff;
   text-align: center;
   background-color: rgba(48, 51, 107, 1);
+}
+
+#gmap_canvas {
+  width: 100%;
+  height: 500px;
 }
 
 @media (min-width: 768px) {
