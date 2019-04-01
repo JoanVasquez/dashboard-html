@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
   <link rel="stylesheet" href="vendors/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="vendors/css/jquery-jvectormap-2.0.3.css">
   <link rel="stylesheet" href="resources/css/style.css" />
   <title>Dashboard - vasquezportfolio</title>
 </head>
@@ -111,15 +112,19 @@
             <div class="col-12 mt-2 mb-2 p-3 rounded bg-danger">
               <h5><i class="fas fa-hdd"></i> Hard Drive</h5>
               <hr class="bg-white">
-              <span>300GB/<stposition: sticky; position: -webkit-sticky; display: flex; top: 0;rong>1TB</strong></span>
+              <span>300GB/<strong>1TB</strong></span>
             </div>
           </div>
         </div>
         <div class="row bg-white p-4">
-          <div class="col-sm-12 col-lg-8 mt-5">
-            <canvas id="pie-chart" class="col-12"></canvas>
+          <div class="col-sm-12 col-lg-8 mb-5">
+            <h2 class="">VISITORS</h2>
+            <div class="col-12">
+                <div id="world-map-markers" class="jvector-map"></div> 
+            </div>
+            <!--<canvas id="pie-chart" class="col-12"></canvas>-->
           </div>
-          <div class="col-sm-12 col-lg-4 mt-5">
+          <div class="col-sm-12 col-lg-4">
             <h3 class="text-center">Goals Completed</h3>
             <div class="col-12 mt-4">
               <span>Develop a React JS app</span>
@@ -174,6 +179,8 @@
   <script src="vendors/js/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
   <script src="vendors/js/bootstrap.min.js"></script>
+  <script src="vendors/js/jquery-jvectormap-2.0.3.min.js"></script>
+  <script src="vendors/js/jquery-jvectormap-world-mill-en.js"></script>
   <script src="resources/js/app.js"></script>
 </body>
 

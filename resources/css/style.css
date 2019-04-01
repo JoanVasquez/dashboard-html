@@ -130,9 +130,9 @@ body {
   background-color: rgba(48, 51, 107, 1);
 }
 
-#gmap_canvas {
+.jvector-map {
   width: 100%;
-  height: 500px;
+  height: 370px;
 }
 
 @media (min-width: 768px) {
