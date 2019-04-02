@@ -7,10 +7,21 @@
 html,
 body {
   font-size: 1rem;
+  font-family: 'Open Sans';
   background-color: #fafafa;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato';
+  font-weight: 700;
+  color: #ff7675;
+}
+
+#sidebar-header h3 {
+  color: #fff;
 }
 
 #navbar {
@@ -45,7 +56,7 @@ body {
   height: 20px;
   border-radius: 50%;
   background-color: #ee5752;
-  color: white;
+  color: #fff;
 }
 
 #wrapper {
@@ -101,6 +112,10 @@ body {
   margin-left: 0;
 }
 
+#wrapper #world-map-markers {
+  height: 500px;
+}
+
 /*PROGRESS BAR*/
 .progress .progress-bar-one {
   width: 100%;
@@ -128,11 +143,6 @@ body {
   color: #fff;
   text-align: center;
   background-color: rgba(48, 51, 107, 1);
-}
-
-.jvector-map {
-  width: 100%;
-  height: 370px;
 }
 
 @media (min-width: 768px) {

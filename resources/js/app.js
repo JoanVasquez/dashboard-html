@@ -83,6 +83,58 @@
       hoverColor: "#fff"
     });
 
+    Chart.defaults.global.responsive = true;
+
+    let linearChart = document.getElementById('linear-chart').getContext('2d');
+    new Chart(linearChart, {
+      type: 'line',
+      data: {
+        labels: ['JavaScript', 'PHP', '.NET', 'Java', 'R'],
+        datasets: [
+          {
+            label: 'POPULARITY',
+            data: [
+              617594,
+              181045,
+              153060,
+              706953,
+              105162
+            ],
+            backgroundColor: [
+              '#0984e3'
+            ],
+            borderWidth: 2,
+            borderColor: '#777'
+            //backgroundColor: 'green'
+          }
+        ]
+      }
+    });
+
+    let pieChart = document.getElementById('pie-chart').getContext('2d');
+    new Chart(pieChart, {
+      type: 'doughnut',
+      data: {
+        labels: ['Websites', 'Mobile Apps', 'Webservice'],
+        datasets: [
+          {
+            label: 'POPULARITY',
+            data: [
+              600,
+              300,
+              150,
+            ],
+            backgroundColor: [
+              '#3498db',
+              '#e74c3c',
+              '#2ecc71'
+            ],
+            borderWidth: 1
+          }
+        ]
+      }
+    });
+
     /*Chart.defaults.global.responsive = true;
     Chart.defaults.global.maintainAspectRatio = false;
 
