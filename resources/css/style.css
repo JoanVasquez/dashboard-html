@@ -7,7 +7,7 @@
 html,
 body {
   font-size: 1rem;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   background-color: #fafafa;
   color: #7f8c8d;
   height: 100%;
@@ -15,8 +15,13 @@ body {
   overflow-y: auto;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lato';
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato";
   color: #95afc0;
 }
 
@@ -26,10 +31,10 @@ h1, h2, h3, h4, h5, h6 {
 
 #navbar {
   position: sticky;
-    position: -webkit-sticky;
-    display: flex;
-    top: 0;
-    z-index: 9999;
+  position: -webkit-sticky;
+  display: flex;
+  top: 0;
+  z-index: 9999;
   box-shadow: 2px 0px 5px #ecf0f1 !important;
 }
 
@@ -89,15 +94,15 @@ h1, h2, h3, h4, h5, h6 {
 
 #sidebar-wrapper .list-group {
   position: sticky;
-    position: -webkit-sticky;
-    display: flex;
-    top: 0;
+  position: -webkit-sticky;
+  display: flex;
+  top: 0;
   width: 15rem;
 }
 
 #sidebar-wrapper .list-group a {
   border: 1px solid rgba(44, 83, 100, 1);
-  transition: background-color 2s ease;
+  transition: background-color 0.5s;
 }
 
 #sidebar-wrapper .list-group a:hover {
@@ -150,7 +155,9 @@ table img {
   height: 60px;
 }
 
-table .order-in-transit, .order-delivered, .order-cancelled {
+table .order-in-transit,
+.order-delivered,
+.order-cancelled {
   padding: 8px 10px;
   box-shadow: 0 0 2px #ecf0f1;
 }
