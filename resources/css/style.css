@@ -9,6 +9,7 @@ body {
   font-size: 1rem;
   font-family: 'Open Sans';
   background-color: #fafafa;
+  color: #7f8c8d;
   height: 100%;
   overflow-x: hidden;
   overflow-y: auto;
@@ -16,8 +17,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Lato';
-  font-weight: 700;
-  color: #ff7675;
+  color: #95afc0;
 }
 
 #sidebar-header h3 {
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     top: 0;
     z-index: 9999;
-  box-shadow: 2px 0px 5px #bbbbbb !important;
+  box-shadow: 2px 0px 5px #ecf0f1 !important;
 }
 
 #navbar li {
@@ -143,6 +143,65 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
   text-align: center;
   background-color: rgba(48, 51, 107, 1);
+}
+
+table img {
+  width: 60px;
+  height: 60px;
+}
+
+table .order-in-transit, .order-delivered, .order-cancelled {
+  padding: 8px 10px;
+  box-shadow: 0 0 2px #ecf0f1;
+}
+
+table .order-in-transit {
+  color: #e1b12c;
+  background-color: rgba(251, 197, 49, 0.2);
+}
+
+table .order-delivered {
+  color: #44bd32;
+  background-color: rgba(76, 209, 55, 0.2);
+}
+
+table .order-cancelled {
+  color: #c23616;
+  background-color: rgba(232, 65, 24, 0.2);
+}
+
+.fb-network {
+  background-color: #3b5998;
+}
+
+.twitter-network {
+  background-color: #1da1f2;
+}
+
+.instagram-network {
+  background-color: #c32aa3;
+}
+
+.google-plus-network {
+  background-color: #db4437;
+}
+
+.pinterest-network {
+  background-color: #bd081c;
+}
+
+.social-networks {
+  color: #fff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.box-tasks {
+  box-shadow: 0 0 0px #ecf0f1;
 }
 
 @media (min-width: 768px) {

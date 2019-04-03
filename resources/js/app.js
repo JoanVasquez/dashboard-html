@@ -118,7 +118,6 @@
         labels: ['Websites', 'Mobile Apps', 'Webservice'],
         datasets: [
           {
-            label: 'POPULARITY',
             data: [
               600,
               300,
@@ -130,6 +129,51 @@
               '#2ecc71'
             ],
             borderWidth: 1
+          }
+        ]
+      }
+    });
+
+    let tasksChart = document.getElementById('tasks-chart').getContext('2d');
+    new Chart(tasksChart, {
+      type: 'bar',
+      data: {
+        labels: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+        datasets: [
+          {
+            data: [
+              505, 409, 654, 800, 723
+            ],
+            backgroundColor: [
+              '#27ae60',
+              '#27ae60',
+              '#27ae60',
+              '#27ae60',
+              '#27ae60'
+            ]
+            //backgroundColor: 'green'
+          }
+        ]
+      }
+    });
+
+    let productionChart = document.getElementById('production-chart').getContext('2d');
+    new Chart(productionChart, {
+      type: 'polarArea',
+      data: {
+        labels: ['Blog', 'E-Commerce', 'CMS'],
+        datasets: [
+          {
+            label: 'HOMEWORKS HISTORY',
+            data: [
+              60, 30, 80
+            ],
+            backgroundColor: [
+              '#e74c3c',
+              '#2980b9',
+              '#8e44ad'
+            ]
+            //backgroundColor: 'green'
           }
         ]
       }
