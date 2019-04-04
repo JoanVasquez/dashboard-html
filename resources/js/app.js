@@ -77,12 +77,12 @@
       });
     }
 
-    
-
     Chart.defaults.global.responsive = true;
 
-    if(document.getElementById('linear-chart')) {
-      let linearChart = document.getElementById('linear-chart').getContext('2d');
+    let linearChart = document.getElementById('linear-chart');
+
+    if(linearChart) {
+      linearChart = linearChart.getContext('2d');
       new Chart(linearChart, {
         type: 'line',
         data: {
@@ -109,8 +109,10 @@
       });
     }
 
+    let pieChart = document.getElementById('pie-chart');
+
     if(document.getElementById('pie-chart')) {
-      let pieChart = document.getElementById('pie-chart').getContext('2d');
+      pieChart = pieChart.getContext('2d');
       new Chart(pieChart, {
         type: 'doughnut',
         data: {
@@ -134,8 +136,10 @@
       });
     }
 
+    let tasksChart = document.getElementById('tasks-chart');
+
     if(document.getElementById('tasks-chart')) {
-      let tasksChart = document.getElementById('tasks-chart').getContext('2d');
+      tasksChart = tasksChart.getContext('2d');
       new Chart(tasksChart, {
         type: 'bar',
         data: {
@@ -159,8 +163,10 @@
       });
     }
 
+    let productionChart = document.getElementById('production-chart');
+
     if(document.getElementById('production-chart')) {
-      let productionChart = document.getElementById('production-chart').getContext('2d');
+      productionChart = productionChart.getContext('2d');
       new Chart(productionChart, {
         type: 'polarArea',
         data: {
@@ -182,5 +188,18 @@
         }
       });
     }
+
+    let notifications = document.querySelectorAll('.btn-notification');
+
+    if(notifications.length) {
+      notifications.forEach((item, index) => {
+        item.addEventListener('click', function(event) {
+          if(index === 0) {
+            toastr.success('Notification Top Right')
+          }
+        });
+      });
+    }
+
   });
 })();

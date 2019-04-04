@@ -25,6 +25,12 @@ h6 {
   color: #95afc0;
 }
 
+#scrollable-modal{
+  height: 300px;
+  width: 100%;
+  overflow-y: auto;
+}
+
 #sidebar-header h3 {
   color: #fff;
 }
